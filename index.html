@@ -4,54 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMM PERFUMS</title>
-    <link rel="stylesheet" href="styles.css?v=5">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- HEADER -->
-<header class="header-bar">
-    <img src="images/AMM-LOGO.png" alt="AMM Logo" class="logo">
-    <span class="header-title">AMM PERFUMS</span>
-</header>
+<header>AMM PERFUMS</header>
+<p class="subtitle">Alle Parfüms auf dieser Liste haben nichts mit dem Original zu tun, sondern sind nur von ihnen inspiriert.</p>
 
-<!-- UNTERTITEL -->
-<p class="subtitle">
-    Alle Parfüms auf dieser Liste haben nichts mit dem Original zu tun, sondern sind nur von ihnen inspiriert.
-</p>
-
-<!-- FILTER-BUTTONS -->
+<!-- Buttons -->
 <div class="filter-container">
     <button class="filter-btn active" onclick="filterPerfumes('all', this)">Alle</button>
 </div>
 
-<!-- SUCHFELD + BUTTONS -->
 <div class="search-box">
     <div class="center-buttons">
         <button class="filter-btn" onclick="filterPerfumes('men', this)">Herren</button>
         <button class="filter-btn" onclick="filterPerfumes('unisex', this)">Unisex</button>
         <button class="filter-btn" onclick="filterPerfumes('women', this)">Damen</button>
     </div>
-
     <input type="text" id="searchInput" onkeyup="searchPerfumes()" placeholder="Nach Parfüm suchen...">
 </div>
 
-<!-- HAUPT-GRID -->
+<!-- GRID -->
 <div id="perfumeGrid" class="perfume-grid"></div>
 
-<!-- MODAL: Duftpyramide -->
-<div id="pyramidModal" class="modal">
-    <span class="close" onclick="closePyramid()">&times;</span>
-    <img class="modal-content" id="pyramidImage">
-</div>
-
-<!-- MODAL: Detail-Image -->
-<div id="imageModal" class="modal">
-    <span id="modalClose" class="modal-close">&times;</span>
-    <img class="modal-content" id="modalImg">
-</div>
-
-<!-- JAVASCRIPT -->
 <script src="app.js"></script>
-
 </body>
 </html>
