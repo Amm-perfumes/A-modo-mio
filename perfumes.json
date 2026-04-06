@@ -180,6 +180,12 @@
     "pyramid": "Dubai-Collection.jpg",
     "category": "all"
   },
+   {
+    "name": "DUBAI PARIS",
+    "image": "Dubai Paris.jpg",
+    "pyramid": "Dubai-Paris.jpg",
+    "category": "all"
+  },
   {
     "name": "GISSADA AMBRASADOR",
     "image": "Gisada Ambrassador.jpg",
